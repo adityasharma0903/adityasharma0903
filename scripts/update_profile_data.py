@@ -3,6 +3,7 @@ from __future__ import annotations
 import datetime as dt
 import json
 import os
+import subprocess
 import sys
 import urllib.request
 from pathlib import Path
@@ -78,7 +79,9 @@ def build_stats() -> tuple[int, int, int, str, str]:
     weeks = calendar["weeks"]
     days: list[dict[str, object]] = [day for week in weeks for day in week["contributionDays"]]
 
-    total = int(calendar["totalContributions"])
+    total = int(
+      subprocess.check_output(["git", "rev-list", "--count", "HEAD"], cwd=REPO_ROOT, text=True).strip()
+    )
 
     current_streak = 0
     for day in reversed(days):
@@ -129,7 +132,7 @@ def build_svg(total: int, current_streak: int, longest_streak: int, from_date: s
 
   <g>
     <text x="667" y="112" text-anchor="middle" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="32" font-weight="700">{total}</text>
-    <text x="667" y="148" text-anchor="middle" fill="#93C5FD" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="500">Total Contributions</text>
+    <text x="667" y="148" text-anchor="middle" fill="#93C5FD" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="500">Commit Count</text>
     <text x="667" y="188" text-anchor="middle" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">{from_date} - {to_date}</text>
   </g>
 

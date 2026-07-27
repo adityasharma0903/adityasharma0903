@@ -180,7 +180,7 @@ Building scalable applications with modern technologies.
 </p>
 
 <p align="center">
-	<strong>Auto snapshot refreshed from GitHub profile data on every push.</strong>
+	<strong>Auto snapshot refreshed from GitHub commit history on every push.</strong>
 </p>
 
 ## Achievements
