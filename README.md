@@ -200,7 +200,7 @@ Building scalable applications with modern technologies.
 				<li>Ultrasonic obstacle detection</li>
 				<li>Wireless override control</li>
 			</ul>
-			<p><code>C++</code> <code>Arduino Mega</code> <code>Bluetooth</code> <code>SASS</code> <code>Webpack</code></p>
+			<!-- <p><code>C++</code> <code>Arduino Mega</code> <code>Bluetooth</code> <code>SASS</code> <code>Webpack</code></p> -->
 		</td>
 		<td width="33%" valign="top">
 			<h4 align="center">🥇 Winner — Formula Hacks 2025</h4>
@@ -212,7 +212,7 @@ Building scalable applications with modern technologies.
 				<li>Full engine simulation mechanics</li>
 				<li>3D CAD-like interactive layout</li>
 			</ul>
-			<p><code>Three.js</code> <code>Webpack</code> <code>Figma</code> <code>JavaScript</code></p>
+			<!-- <p><code>Three.js</code> <code>Webpack</code> <code>Figma</code> <code>JavaScript</code></p> -->
 		</td>
 		<td width="33%" valign="top">
 			<h4 align="center">🥇 Winner — Hacknexus 1.0</h4>
@@ -224,12 +224,12 @@ Building scalable applications with modern technologies.
 				<li>Multilingual legal query processing</li>
 				<li>Contextual document extraction</li>
 			</ul>
-			<p><code>Python</code> <code>RAG Pipelines</code> <code>MongoDB</code> <code>React</code></p>
+			<!-- <p><code>Python</code> <code>RAG Pipelines</code> <code>MongoDB</code> <code>React</code></p> -->
 		</td>
 	</tr>
 </table>
 
-### 🚀 National Placements & Recognition
+### 🚀 National Recognition
 
 <table width="100%">
 	<tr>
