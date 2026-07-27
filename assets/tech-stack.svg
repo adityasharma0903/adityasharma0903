@@ -1,0 +1,77 @@
+<svg width="1600" height="520" viewBox="0 0 1600 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tech stack badge wall">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B1020"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="titleGlow" x1="0" y1="0" x2="1600" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect x="8" y="8" width="1584" height="504" rx="24" fill="url(#bg)" stroke="#1E293B"/>
+  <text x="72" y="66" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">Tech Stack:</text>
+  <rect x="72" y="78" width="1456" height="1.5" fill="#334155" opacity="0.9"/>
+
+  <g transform="translate(72 104)" filter="url(#shadow)">
+    <!-- row 1 -->
+    <g transform="translate(0 0)"><rect width="76" height="38" rx="4" fill="#0F62FE"/><text x="38" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">C</text></g>
+    <g transform="translate(86 0)"><rect width="92" height="38" rx="4" fill="#0F62FE"/><text x="46" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">C++</text></g>
+    <g transform="translate(188 0)"><rect width="86" height="38" rx="4" fill="#264DE4"/><text x="43" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">CSS3</text></g>
+    <g transform="translate(284 0)"><rect width="118" height="38" rx="4" fill="#E10098"/><text x="59" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">GRAPHQL</text></g>
+    <g transform="translate(412 0)"><rect width="92" height="38" rx="4" fill="#E44D26"/><text x="46" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">HTML5</text></g>
+    <g transform="translate(514 0)"><rect width="88" height="38" rx="4" fill="#007396"/><text x="44" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">JAVA</text></g>
+    <g transform="translate(612 0)"><rect width="150" height="38" rx="4" fill="#F7DF1E"/><text x="75" y="25" text-anchor="middle" fill="#111111" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">JAVASCRIPT</text></g>
+    <g transform="translate(772 0)"><rect width="100" height="38" rx="4" fill="#1E1B4B"/><text x="50" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">LATEX</text></g>
+    <g transform="translate(882 0)"><rect width="118" height="38" rx="4" fill="#5391FE"/><text x="59" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">POWERSHELL</text></g>
+
+    <!-- row 2 -->
+    <g transform="translate(0 48)"><rect width="108" height="38" rx="4" fill="#3776AB"/><text x="54" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">PYTHON</text></g>
+    <g transform="translate(118 48)"><rect width="122" height="38" rx="4" fill="#121011"/><text x="61" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">BASH SCRIPT</text></g>
+    <g transform="translate(250 48)"><rect width="96" height="38" rx="4" fill="#000000"/><text x="48" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">VERCEL</text></g>
+    <g transform="translate(356 48)"><rect width="96" height="38" rx="4" fill="#00C7B7"/><text x="48" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">NETLIFY</text></g>
+    <g transform="translate(462 48)"><rect width="94" height="38" rx="4" fill="#4DB33D"/><text x="47" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">RENDER</text></g>
+    <g transform="translate(566 48)"><rect width="108" height="38" rx="4" fill="#FFCA28"/><text x="54" y="25" text-anchor="middle" fill="#111111" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">FIREBASE</text></g>
+    <g transform="translate(684 48)"><rect width="132" height="38" rx="4" fill="#4285F4"/><text x="66" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">GOOGLECLOUD</text></g>
+
+    <!-- row 3 -->
+    <g transform="translate(0 96)"><rect width="100" height="38" rx="4" fill="#430098"/><text x="50" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">HEROKU</text></g>
+    <g transform="translate(110 96)"><rect width="110" height="38" rx="4" fill="#F46800"/><text x="55" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">CHART.JS</text></g>
+    <g transform="translate(230 96)"><rect width="120" height="38" rx="4" fill="#404D59"/><text x="60" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">EXPRESS.JS</text></g>
+    <g transform="translate(360 96)"><rect width="78" height="38" rx="4" fill="#000000"/><text x="39" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">JWT</text></g>
+    <g transform="translate(448 96)"><rect width="70" height="38" rx="4" fill="#CB3837"/><text x="35" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">NPM</text></g>
+    <g transform="translate(528 96)"><rect width="90" height="38" rx="4" fill="#000000"/><text x="45" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">NEXT</text></g>
+    <g transform="translate(628 96)"><rect width="116" height="38" rx="4" fill="#68A063"/><text x="58" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">NODE.JS</text></g>
+    <g transform="translate(754 96)"><rect width="116" height="38" rx="4" fill="#43853D"/><text x="58" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">NODEMON</text></g>
+
+    <!-- row 4 -->
+    <g transform="translate(0 144)"><rect width="108" height="38" rx="4" fill="#22C55E"/><text x="54" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">OPENCV</text></g>
+    <g transform="translate(118 144)"><rect width="142" height="38" rx="4" fill="#CA4245"/><text x="71" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">REACT ROUTER</text></g>
+    <g transform="translate(270 144)"><rect width="140" height="38" rx="4" fill="#FF4154"/><text x="70" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">REACT QUERY</text></g>
+    <g transform="translate(420 144)"><rect width="88" height="38" rx="4" fill="#61DAFB"/><text x="44" y="25" text-anchor="middle" fill="#111111" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">REACT</text></g>
+    <g transform="translate(518 144)"><rect width="146" height="38" rx="4" fill="#20232A"/><text x="73" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">REACT NATIVE</text></g>
+    <g transform="translate(674 144)"><rect width="116" height="38" rx="4" fill="#010101"/><text x="58" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">SOCKET.IO</text></g>
+    <g transform="translate(800 144)"><rect width="104" height="38" rx="4" fill="#000000"/><text x="52" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">THREEJS</text></g>
+
+    <!-- row 5 -->
+    <g transform="translate(0 192)"><rect width="146" height="38" rx="4" fill="#38BDF8"/><text x="73" y="25" text-anchor="middle" fill="#111111" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">TAILWINDCSS</text></g>
+    <g transform="translate(156 192)"><rect width="84" height="38" rx="4" fill="#646CFF"/><text x="42" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">VITE</text></g>
+    <g transform="translate(250 192)"><rect width="92" height="38" rx="4" fill="#42B883"/><text x="46" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">VUE.JS</text></g>
+    <g transform="translate(352 192)"><rect width="90" height="38" rx="4" fill="#4479A1"/><text x="45" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">MYSQL</text></g>
+    <g transform="translate(452 192)"><rect width="120" height="38" rx="4" fill="#47A248"/><text x="60" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">MONGODB</text></g>
+    <g transform="translate(582 192)"><rect width="110" height="38" rx="4" fill="#13AA52"/><text x="55" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">FIREBASE</text></g>
+    <g transform="translate(702 192)"><rect width="178" height="38" rx="4" fill="#FF0000"/><text x="89" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">ADOBE ACROBAT READER</text></g>
+
+    <!-- row 6 -->
+    <g transform="translate(0 240)"><rect width="84" height="38" rx="4" fill="#F24E1E"/><text x="42" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">FIGMA</text></g>
+    <g transform="translate(94 240)"><rect width="90" height="38" rx="4" fill="#4D81FE"/><text x="45" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">NUMPY</text></g>
+    <g transform="translate(194 240)"><rect width="72" height="38" rx="4" fill="#F05032"/><text x="36" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">GIT</text></g>
+    <g transform="translate(276 240)"><rect width="108" height="38" rx="4" fill="#181717"/><text x="54" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">GITHUB</text></g>
+    <g transform="translate(394 240)"><rect width="88" height="38" rx="4" fill="#F15B2A"/><text x="44" y="25" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">PREZI</text></g>
+  </g>
+</svg>
