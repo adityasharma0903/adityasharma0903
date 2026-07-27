@@ -114,24 +114,27 @@ Building scalable applications with modern technologies.
 ## GitHub Analytics
 
 <p align="center">
-	<img height="170" src="https://github-readme-stats.vercel.app/api?username=adityasharma0903&show_icons=true&hide_border=true&title_color=93C5FD&text_color=E2E8F0&icon_color=8B5CF6&bg_color=0F172A&border_radius=16" alt="GitHub stats" />
-	<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=adityasharma0903&hide_border=true&background=0F172A&stroke=1E293B&ring=60A5FA&fire=8B5CF6&currStreakNum=E2E8F0&sideNums=E2E8F0&currStreakLabel=93C5FD&sideLabels=93C5FD&dates=94A3B8" alt="GitHub streak" />
+	<img src="assets/profile-data.svg" alt="GitHub snapshot card" width="100%" />
 </p>
 
 <p align="center">
-	<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=adityasharma0903&layout=compact&hide_border=true&title_color=93C5FD&text_color=E2E8F0&bg_color=0F172A&border_radius=16" alt="Top languages" />
-	<img width="49%" src="https://github-profile-trophy.vercel.app/?username=adityasharma0903&theme=onedark&no-frame=true&no-bg=true&margin-w=8&margin-h=8" alt="GitHub trophies" />
+	<strong>Live snapshot refreshed from GitHub profile data.</strong>
 </p>
 
 ## Achievements
 
-<p align="center">
-	<img src="https://raw.githubusercontent.com/adityasharma0903/adityasharma0903/output/github-contribution-grid-snake.svg" alt="Snake animation" />
-</p>
-
-<p align="center">
-	<img src="https://github-readme-activity-graph.vercel.app/graph?username=adityasharma0903&bg_color=0F172A&color=E2E8F0&line=60A5FA&point=8B5CF6&area=true&hide_border=true" alt="Activity graph" />
-</p>
+<table width="100%">
+	<tr>
+		<td width="50%" valign="top">
+			<strong>Snake animation</strong>
+			<p>The GitHub Actions workflow in <a href=".github/workflows/snake.yml">.github/workflows/snake.yml</a> keeps the contribution snake updated automatically.</p>
+		</td>
+		<td width="50%" valign="top">
+			<strong>Metrics workflow</strong>
+			<p>The metrics workflow in <a href=".github/workflows/metrics.yml">.github/workflows/metrics.yml</a> can refresh the profile snapshot on a schedule.</p>
+		</td>
+	</tr>
+</table>
 
 ## Connect
 
@@ -151,16 +154,8 @@ Building scalable applications with modern technologies.
 </p>
 
 <div align="center">
-	<img src="https://komarev.com/ghpvc/?username=adityasharma0903&label=Visitors&color=3B82F6&style=for-the-badge" alt="Visitor counter" />
+	<strong>Profile views are tracked in the GitHub profile snapshot above.</strong>
 </div>
-
-<div align="center">
-	<img src="assets/divider.svg" alt="Divider" width="100%" />
-</div>
-
-<p align="center">
-	<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" alt="Daily quote" />
-</p>
 
 <p align="center">
 	<strong>Building products that matter.</strong>

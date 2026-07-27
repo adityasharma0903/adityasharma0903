@@ -1,0 +1,53 @@
+<svg width="1600" height="420" viewBox="0 0 1600 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GitHub profile snapshot">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="120" y1="60" x2="1480" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+  </defs>
+
+  <rect x="8" y="8" width="1584" height="404" rx="28" fill="url(#bg)" stroke="url(#accent)" stroke-opacity="0.5"/>
+  <circle cx="138" cy="100" r="84" fill="#1D4ED8" fill-opacity="0.16" filter="url(#glow)"/>
+  <circle cx="1468" cy="322" r="112" fill="#8B5CF6" fill-opacity="0.14" filter="url(#glow)"/>
+
+  <text x="72" y="64" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">GitHub Snapshot</text>
+  <text x="72" y="96" fill="#93C5FD" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="500">Real profile numbers, shown as a local card so the preview never falls back to alt text.</text>
+
+  <g transform="translate(72 136)">
+    <rect width="448" height="204" rx="24" fill="#0F172A" fill-opacity="0.82" stroke="#334155"/>
+    <text x="36" y="54" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">892</text>
+    <text x="36" y="86" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16">Total Contributions</text>
+    <rect x="36" y="120" width="376" height="12" rx="6" fill="#1E293B"/>
+    <rect x="36" y="120" width="286" height="12" rx="6" fill="url(#accent)">
+      <animate attributeName="width" values="260;320;260" dur="7s" repeatCount="indefinite"/>
+    </rect>
+    <text x="36" y="168" fill="#64748B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Aug 30, 2024 - Present</text>
+  </g>
+
+  <g transform="translate(576 136)">
+    <rect width="448" height="204" rx="24" fill="#0F172A" fill-opacity="0.82" stroke="#334155"/>
+    <text x="36" y="54" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">2</text>
+    <text x="36" y="86" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16">Current Streak</text>
+    <circle cx="336" cy="70" r="40" fill="none" stroke="#60A5FA" stroke-width="7" stroke-dasharray="150 70" stroke-linecap="round">
+      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 336 70" to="360 336 70" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <text x="36" y="168" fill="#64748B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Jul 26 - Jul 27</text>
+  </g>
+
+  <g transform="translate(1080 136)">
+    <rect width="448" height="204" rx="24" fill="#0F172A" fill-opacity="0.82" stroke="#334155"/>
+    <text x="36" y="54" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">7</text>
+    <text x="36" y="86" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16">Longest Streak</text>
+    <rect x="36" y="120" width="376" height="12" rx="6" fill="#1E293B"/>
+    <rect x="36" y="120" width="170" height="12" rx="6" fill="#A78BFA"/>
+    <text x="36" y="168" fill="#64748B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Aug 8, 2025 - Aug 14, 2025</text>
+  </g>
+</svg>
