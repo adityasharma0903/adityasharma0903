@@ -1,117 +1,163 @@
 <h1 align="center">Hi 👋, I'm Aditya Sharma</h1>
 
 <h3 align="center">
-Full Stack Developer • MERN Stack • Backend Developer
+Full Stack Developer • Backend Engineer • MERN Stack Developer
 </h3>
 
 <p align="center">
-I enjoy building scalable web applications and solving real-world problems with clean, efficient code.
+Building scalable web applications, backend systems and open-source projects.
+</p>
+
+<p align="center">
+<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=24&duration=3500&pause=800&color=3B82F6&center=true&vCenter=true&width=700&lines=Full+Stack+Developer;Backend+Engineer;MERN+Stack+Developer;Linux+Enthusiast;Always+Learning+New+Things" />
+</p>
+
+---
+
+<h2 align="center">🚀 About Me</h2>
+
+<table align="center">
+<tr>
+<td>
+
+🎓 B.Tech Computer Science Student
+
+💻 Full Stack Developer
+
+🚀 Backend Enthusiast
+
+🌱 Learning Docker, Kubernetes & AWS
+
+🐧 Linux Lover
+
+⚡ Love building real-world products
+
+</td>
+
+<td>
+
+🔭 Currently Building
+
+• Livique
+
+• NovaOS
+
+• FahRide
+
+• Open Source Projects
+
+</td>
+</tr>
+</table>
+
+---
+
+<h2 align="center">💻 Tech Stack</h2>
+
+<p align="center">
+
+<img src="https://skillicons.dev/icons?i=java,cpp,javascript,react,nextjs,nodejs,express,mongodb,mysql,docker,linux,git,github,tailwind,vscode,postman&perline=8"/>
+
+</p>
+
+---
+
+<h2 align="center">🚀 Featured Projects</h2>
+
+<p align="center">
+
+<a href="https://github.com/adityasharma0903/YOUR_REPO_NAME">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=adityasharma0903&repo=YOUR_REPO_NAME&theme=tokyonight"/>
+</a>
+
+<a href="https://github.com/adityasharma0903/YOUR_REPO_NAME">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=adityasharma0903&repo=YOUR_REPO_NAME&theme=tokyonight"/>
+</a>
+
 </p>
 
 <p align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=24&duration=3000&color=3B82F6&center=true&vCenter=true&width=700&lines=Full+Stack+Developer;MERN+Stack+Developer;Backend+Developer;Open+Source+Enthusiast;Always+Learning"/>
+<a href="https://github.com/adityasharma0903/YOUR_REPO_NAME">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=adityasharma0903&repo=YOUR_REPO_NAME&theme=tokyonight"/>
+</a>
+
+<a href="https://github.com/adityasharma0903/YOUR_REPO_NAME">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=adityasharma0903&repo=YOUR_REPO_NAME&theme=tokyonight"/>
+</a>
 
 </p>
 
-## 🚀 About Me
+---
 
-🎓 B.Tech Computer Science Student
+<h2 align="center">📊 GitHub Analytics</h2>
 
-💻 Passionate Full Stack Developer
+<p align="center">
 
-🌱 Currently Learning
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=adityasharma0903&show_icons=true&theme=tokyonight&hide_border=true"/>
 
-- Docker
-- Kubernetes
-- System Design
-- AWS
+<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=adityasharma0903&theme=tokyonight&hide_border=true"/>
 
-⚡ Interests
+</p>
 
-- Web Development
-- Backend Engineering
-- Open Source
-- Linux
+<p align="center">
 
-🚀 Currently Building
+<img width="45%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=adityasharma0903&layout=compact&theme=tokyonight&hide_border=true"/>
 
-- Livique
-- NovaOS
-- FahRide
-
-- ## 💻 Tech Stack
-
-### Languages
-
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-black?style=for-the-badge&logo=javascript)
-![C++](https://img.shields.io/badge/C++-blue?style=for-the-badge&logo=cplusplus)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge)
-
-### Frontend
-
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)
-![NextJS](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js)
-![Tailwind](https://img.shields.io/badge/Tailwind-38BDF8?style=for-the-badge&logo=tailwindcss)
-
-### Backend
-
-![NodeJS](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js)
-![Express](https://img.shields.io/badge/Express-black?style=for-the-badge&logo=express)
-![MongoDB](https://img.shields.io/badge/MongoDB-green?style=for-the-badge&logo=mongodb)
-![MySQL](https://img.shields.io/badge/MySQL-blue?style=for-the-badge&logo=mysql)
-
-### DevOps
-
-![Docker](https://img.shields.io/badge/Docker-blue?style=for-the-badge&logo=docker)
-![Linux](https://img.shields.io/badge/Linux-black?style=for-the-badge&logo=linux)
-![Git](https://img.shields.io/badge/Git-red?style=for-the-badge&logo=git)
-
-
-## 🚀 Featured Projects
-
-### 🛍️ Livique
-
-Modern MERN eCommerce platform with secure authentication and responsive UI.
+</p>
 
 ---
 
-### 🖥️ NovaOS
+<h2 align="center">🏆 GitHub Trophies</h2>
 
-Lightweight Linux distribution built on Alpine Linux.
+<p align="center">
 
----
+<img src="https://github-profile-trophy.vercel.app/?username=adityasharma0903&theme=tokyonight&row=1&column=7&no-frame=true"/>
 
-### 🚖 FahRide
-
-Cab booking platform with real-time ride management.
+</p>
 
 ---
 
-### 🎓 Face Recognition Attendance System
+<h2 align="center">🌐 Connect With Me</h2>
 
-AI-powered attendance system using DeepFace and FastAPI.
+<p align="center">
+
+<a href="https://adityasharma1.vercel.app">
+<img src="https://img.shields.io/badge/Portfolio-000?style=for-the-badge&logo=vercel"/>
+</a>
+
+<a href="https://www.linkedin.com/in/aditya-sharma-b54a70325/">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin"/>
+</a>
+
+<a href="mailto:adityasharma08093@gmail.com">
+<img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>
+
+</p>
 
 ---
 
-### 📦 Offbyt
+<h2 align="center">👀 Profile Views</h2>
 
-CLI tool that automatically generates backend APIs from frontend code.
+<p align="center">
 
-## 📊 GitHub Stats
+<img src="https://komarev.com/ghpvc/?username=adityasharma0903&label=Visitors&color=0e75b6&style=for-the-badge"/>
 
-![](https://github-readme-stats.vercel.app/api?username=adityasharma0903&show_icons=true&theme=tokyonight)
+</p>
 
-![](https://github-readme-streak-stats.herokuapp.com/?user=adityasharma0903&theme=tokyonight)
+---
 
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=adityasharma0903&layout=compact&theme=tokyonight)
+<p align="center">
 
-## 🌐 Connect with Me
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight"/>
 
-- Portfolio: https://adityasharma1.vercel.app/
-- LinkedIn: https://www.linkedin.com/in/aditya-sharma-b54a70325/
-- Email: adityasharma08093@gmail.com
+</p>
 
-- ![](https://komarev.com/ghpvc/?username=adityasharma0903)
-- ⭐ Thanks for visiting my profile!
+---
+
+<p align="center">
+
+⭐ <b>If you like my work, consider giving a star to my repositories!</b>
+
+</p>
