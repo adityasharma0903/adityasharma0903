@@ -43,7 +43,7 @@ def graphql(query: str, variables: dict[str, object]) -> dict[str, object]:
     return body["data"]
 
 
-def build_stats() -> tuple[int, int, int, str, str]:
+def build_stats() -> tuple[int, int, int, str, str, str, str]:
     now = dt.datetime.now(dt.timezone.utc)
     start = now - dt.timedelta(days=365)
 
