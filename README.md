@@ -1,10 +1,19 @@
-<div align="center">
-	<img src="assets/banner.svg" alt="Aditya Sharma banner" width="100%" />
-</div>
+<h1 align="center">Hi 👋, I'm Aditya Sharma</h1>
 
-<div align="center">
-	<img src="https://readme-typing-svg.herokuapp.com?font=Inter&size=24&duration=3600&pause=900&color=93C5FD&center=true&vCenter=true&width=760&lines=Full+Stack+Developer;Backend+Engineer;MERN+Stack+Developer;Linux+Enthusiast;Open+Source+Contributor;Always+Learning" alt="Typing animation" />
-</div>
+<h3 align="center">
+Full Stack Developer • MERN • Backend • Open Source
+</h3>
+
+<p align="center">
+Building scalable applications with modern technologies.
+</p>
+
+
+<p align="center">
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=24&duration=3000&color=00C6FF&center=true&vCenter=true&width=700&lines=Full+Stack+Developer;MERN+Stack+Developer;Backend+Enthusiast;Always+Learning+New+Things"/>
+
+</p>
 
 <div align="center">
 	<a href="https://adityasharma1.vercel.app">
