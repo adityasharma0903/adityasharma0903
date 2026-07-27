@@ -82,9 +82,9 @@ Building scalable applications with modern technologies.
 	<img src="https://skillicons.dev/icons?i=react,nodejs,express,mongodb,tailwind,javascript,typescript,java,cpp,python,docker,kubernetes,linux,git,github,vscode,postman&theme=dark&perline=8" alt="Skill icons" />
 </p>
 
-## Featured Projects
+<!-- ## Featured Projects
 
-<table width="100%">
+<table width="100%"> -->
 	<tr>
 		<td width="50%" valign="top">
 			<h3>Livique</h3>
@@ -109,7 +109,7 @@ Building scalable applications with modern technologies.
 			<p><strong>Stack:</strong> CLI-first tooling, scripts, backend integrations</p>
 		</td>
 	</tr>
-</table>
+<!-- </table> -->
 
 ## GitHub Analytics
 
