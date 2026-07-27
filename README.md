@@ -67,7 +67,7 @@ Building scalable applications with modern technologies.
 			<div align="center">
 				<img src="assets/aditya2-avatar.png" alt="Aditya portrait" width="320" />
 			</div>
-			<p align="center"><i>Blue-glow framed avatar for the profile card.</i></p>
+			<!-- <p align="center"><i>Blue-glow framed avatar for the profile card.</i></p> -->
 		</td>
 	</tr>
 </table>
