@@ -3,7 +3,6 @@ from __future__ import annotations
 import datetime as dt
 import json
 import os
-import subprocess
 import sys
 import urllib.request
 from pathlib import Path
@@ -52,6 +51,7 @@ def build_stats() -> tuple[int, int, int, str, str]:
     query($login: String!, $from: DateTime!, $to: DateTime!) {
       user(login: $login) {
         contributionsCollection(from: $from, to: $to) {
+          totalCommitContributions
           contributionCalendar {
             totalContributions
             weeks {
@@ -75,92 +75,127 @@ def build_stats() -> tuple[int, int, int, str, str]:
         },
     )
 
-    calendar = data["user"]["contributionsCollection"]["contributionCalendar"]
+    collection = data["user"]["contributionsCollection"]
+    calendar = collection["contributionCalendar"]
     weeks = calendar["weeks"]
     days: list[dict[str, object]] = [day for week in weeks for day in week["contributionDays"]]
 
-    total = int(
-      subprocess.check_output(["git", "rev-list", "--count", "HEAD"], cwd=REPO_ROOT, text=True).strip()
-    )
+    total = int(collection["totalCommitContributions"])
 
+    # Calculate current streak and its dates
     current_streak = 0
+    streak_days = []
     for day in reversed(days):
         if int(day["contributionCount"]) > 0:
             current_streak += 1
+            streak_days.append(day["date"])
         else:
             break
 
+    if current_streak > 0:
+        def format_streak_date(d_str: str) -> str:
+            return dt.date.fromisoformat(d_str).strftime("%b %d").replace(" 0", " ")
+        streak_dates = f"{format_streak_date(streak_days[-1])} - {format_streak_date(streak_days[0])}"
+    else:
+        streak_dates = "No active streak"
+
+    # Calculate longest streak and its dates
     longest_streak = 0
+    longest_start_idx = -1
+    longest_end_idx = -1
+
     running = 0
-    for day in days:
+    running_start_idx = -1
+
+    for i, day in enumerate(days):
         if int(day["contributionCount"]) > 0:
+            if running == 0:
+                running_start_idx = i
             running += 1
-            longest_streak = max(longest_streak, running)
+            if running > longest_streak:
+                longest_streak = running
+                longest_start_idx = running_start_idx
+                longest_end_idx = i
         else:
             running = 0
 
-    return total, current_streak, longest_streak, format_date(start.date()), format_date(now.date())
+    if longest_streak > 0:
+        longest_streak_dates = f"{format_date(dt.date.fromisoformat(days[longest_start_idx]['date']))} - {format_date(dt.date.fromisoformat(days[longest_end_idx]['date']))}"
+    else:
+        longest_streak_dates = "No streak recorded"
+
+    return total, current_streak, longest_streak, format_date(start.date()), format_date(now.date()), streak_dates, longest_streak_dates
 
 
-def build_svg(total: int, current_streak: int, longest_streak: int, from_date: str, to_date: str) -> str:
-    ring_dash = max(92, min(160, 90 + (current_streak * 14)))
-    ring_offset = max(0, 248 - (current_streak * 10))
+def build_svg(total: int, current_streak: int, longest_streak: int, from_date: str, to_date: str, streak_dates: str, longest_streak_dates: str) -> str:
+    commit_bar_width = min(376, max(36, int((total / 1000) * 376))) if total > 0 else 36
+    commit_bar_min = max(36, commit_bar_width - 30)
+    commit_bar_max = min(376, commit_bar_width + 30)
 
-    return f"""<svg width="1600" height="300" viewBox="0 0 1600 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GitHub profile snapshot">
+    streak_dash = max(50, min(220, 100 + (current_streak * 15)))
+    streak_offset = max(31, 251 - streak_dash)
+
+    longest_bar_width = min(376, max(36, int((longest_streak / 30) * 376))) if longest_streak > 0 else 36
+
+    return f"""<svg width="1600" height="420" viewBox="0 0 1600 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GitHub profile snapshot">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="300" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#0B1020"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B1220"/>
       <stop offset="100%" stop-color="#111827"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1600" y2="300" gradientUnits="userSpaceOnUse">
+    <linearGradient id="accent" x1="120" y1="60" x2="1480" y2="360" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#60A5FA"/>
       <stop offset="50%" stop-color="#8B5CF6"/>
       <stop offset="100%" stop-color="#22D3EE"/>
     </linearGradient>
     <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="10"/>
+      <feGaussianBlur stdDeviation="16"/>
     </filter>
   </defs>
 
-  <rect x="10" y="10" width="1580" height="280" rx="18" fill="url(#bg)" stroke="#1F2A44"/>
-  <rect x="10" y="10" width="1580" height="280" rx="18" fill="none" stroke="url(#accent)" stroke-opacity="0.18"/>
+  <rect x="8" y="8" width="1584" height="404" rx="28" fill="url(#bg)" stroke="url(#accent)" stroke-opacity="0.5"/>
+  <circle cx="138" cy="100" r="84" fill="#1D4ED8" fill-opacity="0.16" filter="url(#glow)"/>
+  <circle cx="1468" cy="322" r="112" fill="#8B5CF6" fill-opacity="0.14" filter="url(#glow)"/>
 
-  <rect x="533" y="28" width="534" height="244" rx="10" fill="#0F172A" fill-opacity="0.75" stroke="#17213A"/>
+  <text x="72" y="64" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">GitHub Snapshot</text>
+  <text x="72" y="96" fill="#93C5FD" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="500">Real profile numbers, shown as a local card so the preview never falls back to alt text.</text>
 
-  <line x1="533" y1="48" x2="533" y2="252" stroke="#24314F"/>
-  <line x1="1067" y1="48" x2="1067" y2="252" stroke="#24314F"/>
-
-  <g>
-    <text x="667" y="112" text-anchor="middle" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="32" font-weight="700">{total}</text>
-    <text x="667" y="148" text-anchor="middle" fill="#93C5FD" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="500">Commit Count</text>
-    <text x="667" y="188" text-anchor="middle" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">{from_date} - {to_date}</text>
+  <g transform="translate(72 136)">
+    <rect width="448" height="204" rx="24" fill="#0F172A" fill-opacity="0.82" stroke="#334155"/>
+    <text x="36" y="54" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">{total}</text>
+    <text x="36" y="86" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16">Commit Count</text>
+    <rect x="36" y="120" width="376" height="12" rx="6" fill="#1E293B"/>
+    <rect x="36" y="120" width="{commit_bar_width}" height="12" rx="6" fill="url(#accent)">
+      <animate attributeName="width" values="{commit_bar_min};{commit_bar_max};{commit_bar_min}" dur="7s" repeatCount="indefinite"/>
+    </rect>
+    <text x="36" y="168" fill="#64748B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">{from_date} - {to_date}</text>
   </g>
 
-  <g>
-    <circle cx="800" cy="102" r="34" fill="none" stroke="#60A5FA" stroke-width="6" stroke-dasharray="{ring_dash} {ring_offset}" stroke-linecap="round" filter="url(#glow)">
-      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 800 102" to="360 800 102" dur="10s" repeatCount="indefinite"/>
+  <g transform="translate(576 136)">
+    <rect width="448" height="204" rx="24" fill="#0F172A" fill-opacity="0.82" stroke="#334155"/>
+    <text x="36" y="54" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">{current_streak}</text>
+    <text x="36" y="86" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16">Current Streak</text>
+    <circle cx="336" cy="70" r="40" fill="none" stroke="#60A5FA" stroke-width="7" stroke-dasharray="{streak_dash} {streak_offset}" stroke-linecap="round">
+      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 336 70" to="360 336 70" dur="10s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="800" cy="102" r="40" fill="none" stroke="#8B5CF6" stroke-opacity="0.25" stroke-width="2"/>
-    <path d="M800 70V60" stroke="#8B5CF6" stroke-width="5" stroke-linecap="round"/>
-    <text x="800" y="115" text-anchor="middle" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">{current_streak}</text>
-    <text x="800" y="148" text-anchor="middle" fill="#93C5FD" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="500">Current Streak</text>
-    <text x="800" y="188" text-anchor="middle" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">{to_date}</text>
+    <text x="36" y="168" fill="#64748B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">{streak_dates}</text>
   </g>
 
-  <g>
-    <text x="933" y="112" text-anchor="middle" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="32" font-weight="700">{longest_streak}</text>
-    <text x="933" y="148" text-anchor="middle" fill="#93C5FD" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="500">Longest Streak</text>
-    <text x="933" y="188" text-anchor="middle" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">Best run in the last 365 days</text>
+  <g transform="translate(1080 136)">
+    <rect width="448" height="204" rx="24" fill="#0F172A" fill-opacity="0.82" stroke="#334155"/>
+    <text x="36" y="54" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">{longest_streak}</text>
+    <text x="36" y="86" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16">Longest Streak</text>
+    <rect x="36" y="120" width="376" height="12" rx="6" fill="#1E293B"/>
+    <rect x="36" y="120" width="{longest_bar_width}" height="12" rx="6" fill="#A78BFA"/>
+    <text x="36" y="168" fill="#64748B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">{longest_streak_dates}</text>
   </g>
-
-  <rect x="42" y="42" width="1516" height="216" rx="14" fill="none" stroke="#1E293B" stroke-opacity="0.8"/>
 </svg>
 """
 
 
 def main() -> None:
-    total, current_streak, longest_streak, from_date, to_date = build_stats()
-    OUTPUT_FILE.write_text(build_svg(total, current_streak, longest_streak, from_date, to_date), encoding="utf-8")
+    total, current_streak, longest_streak, from_date, to_date, streak_dates, longest_streak_dates = build_stats()
+    OUTPUT_FILE.write_text(build_svg(total, current_streak, longest_streak, from_date, to_date, streak_dates, longest_streak_dates), encoding="utf-8")
     print(f"Updated {OUTPUT_FILE}")
 
 

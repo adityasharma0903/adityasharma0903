@@ -3,7 +3,7 @@ name: Refresh Profile Snapshot
 on:
   push:
     branches:
-      - main
+      - master
     paths-ignore:
       - assets/profile-data.svg
   workflow_dispatch:
