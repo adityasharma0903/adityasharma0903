@@ -43,6 +43,26 @@ def graphql(query: str, variables: dict[str, object]) -> dict[str, object]:
     return body["data"]
 
 
+def get_all_time_commits(login: str, token: str) -> int:
+    request = urllib.request.Request(
+        f"https://api.github.com/search/commits?q=author:{login}",
+        method="GET",
+        headers={
+            "Authorization": f"Bearer {token}",
+            "Accept": "application/vnd.github+json",
+            "User-Agent": "adityasharma0903-profile-snapshot",
+        },
+    )
+
+    try:
+        with urllib.request.urlopen(request, timeout=30) as response:
+            body = json.load(response)
+        return int(body.get("total_count", 0))
+    except Exception as e:
+        print(f"Error fetching all-time commits: {e}", file=sys.stderr)
+        return 0
+
+
 def build_stats() -> tuple[int, int, int, str, str, str, str]:
     now = dt.datetime.now(dt.timezone.utc)
     start = now - dt.timedelta(days=365)
@@ -50,6 +70,7 @@ def build_stats() -> tuple[int, int, int, str, str, str, str]:
     query = """
     query($login: String!, $from: DateTime!, $to: DateTime!) {
       user(login: $login) {
+        createdAt
         contributionsCollection(from: $from, to: $to) {
           totalCommitContributions
           contributionCalendar {
@@ -75,12 +96,25 @@ def build_stats() -> tuple[int, int, int, str, str, str, str]:
         },
     )
 
+    try:
+        created_date_str = data["user"]["createdAt"]
+        if created_date_str.endswith("Z"):
+            created_date_str = created_date_str[:-1] + "+00:00"
+        created_dt = dt.datetime.fromisoformat(created_date_str)
+        from_date = format_date(created_dt.date())
+    except Exception as e:
+        print(f"Error parsing user createdAt date: {e}", file=sys.stderr)
+        from_date = format_date(start.date())
+
     collection = data["user"]["contributionsCollection"]
     calendar = collection["contributionCalendar"]
     weeks = calendar["weeks"]
     days: list[dict[str, object]] = [day for week in weeks for day in week["contributionDays"]]
 
     total = int(collection["totalCommitContributions"])
+    all_time_commits = get_all_time_commits(LOGIN, TOKEN)
+    if all_time_commits > 0:
+        total = all_time_commits
 
     # Calculate current streak and its dates
     current_streak = 0
