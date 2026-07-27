@@ -23,23 +23,23 @@
 
   <g transform="translate(72 136)">
     <rect width="448" height="204" rx="24" fill="#0F172A" fill-opacity="0.82" stroke="#334155"/>
-    <text x="36" y="54" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">893</text>
-    <text x="36" y="86" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16">Total Contributions</text>
+    <text x="36" y="54" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">436</text>
+    <text x="36" y="86" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16">Commit Count</text>
     <rect x="36" y="120" width="376" height="12" rx="6" fill="#1E293B"/>
-    <rect x="36" y="120" width="286" height="12" rx="6" fill="url(#accent)">
-      <animate attributeName="width" values="260;320;260" dur="7s" repeatCount="indefinite"/>
+    <rect x="36" y="120" width="163" height="12" rx="6" fill="url(#accent)">
+      <animate attributeName="width" values="133;193;133" dur="7s" repeatCount="indefinite"/>
     </rect>
-    <text x="36" y="168" fill="#64748B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Aug 30, 2024 - Present</text>
+    <text x="36" y="168" fill="#64748B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Jul 27, 2025 - Jul 27, 2026</text>
   </g>
 
   <g transform="translate(576 136)">
     <rect width="448" height="204" rx="24" fill="#0F172A" fill-opacity="0.82" stroke="#334155"/>
-    <text x="36" y="54" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">2</text>
+    <text x="36" y="54" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">1</text>
     <text x="36" y="86" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16">Current Streak</text>
-    <circle cx="336" cy="70" r="40" fill="none" stroke="#60A5FA" stroke-width="7" stroke-dasharray="150 70" stroke-linecap="round">
+    <circle cx="336" cy="70" r="40" fill="none" stroke="#60A5FA" stroke-width="7" stroke-dasharray="115 136" stroke-linecap="round">
       <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 336 70" to="360 336 70" dur="10s" repeatCount="indefinite"/>
     </circle>
-    <text x="36" y="168" fill="#64748B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Jul 26 - Jul 27</text>
+    <text x="36" y="168" fill="#64748B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Jul 27 - Jul 27</text>
   </g>
 
   <g transform="translate(1080 136)">
@@ -47,7 +47,7 @@
     <text x="36" y="54" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">7</text>
     <text x="36" y="86" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16">Longest Streak</text>
     <rect x="36" y="120" width="376" height="12" rx="6" fill="#1E293B"/>
-    <rect x="36" y="120" width="170" height="12" rx="6" fill="#A78BFA"/>
+    <rect x="36" y="120" width="87" height="12" rx="6" fill="#A78BFA"/>
     <text x="36" y="168" fill="#64748B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Aug 8, 2025 - Aug 14, 2025</text>
   </g>
 </svg>
