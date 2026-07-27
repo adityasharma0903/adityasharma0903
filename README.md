@@ -185,24 +185,80 @@ Building scalable applications with modern technologies.
 
 ## Achievements
 
+### 🏆 Hackathon Championship Runs
+
+<table width="100%">
+	<tr>
+		<td width="33%" valign="top">
+			<h4 align="center">🥇 Winner — Technovision 4.0</h4>
+			<p align="center"><strong>Voice-Controlled Smart Wheelchair</strong></p>
+			<p>Designed to empower mobility-impaired users through speech recognition.</p>
+			<strong>Key Features:</strong>
+			<ul>
+				<li>Real-time voice commands (forward, back, stop)</li>
+				<li>Emergency voice triggers for alerts</li>
+				<li>Ultrasonic obstacle detection</li>
+				<li>Wireless override control</li>
+			</ul>
+			<p><code>C++</code> <code>Arduino Mega</code> <code>Bluetooth</code> <code>SASS</code> <code>Webpack</code></p>
+		</td>
+		<td width="33%" valign="top">
+			<h4 align="center">🥇 Winner — Formula Hacks 2025</h4>
+			<p align="center"><strong>Interactive Engine Simulator</strong></p>
+			<p>Customizable interactive car engine 3D physics simulation.</p>
+			<strong>Key Features:</strong>
+			<ul>
+				<li>Real-time interactive engine parameters</li>
+				<li>Full engine simulation mechanics</li>
+				<li>3D CAD-like interactive layout</li>
+			</ul>
+			<p><code>Three.js</code> <code>Webpack</code> <code>Figma</code> <code>JavaScript</code></p>
+		</td>
+		<td width="33%" valign="top">
+			<h4 align="center">🥇 Winner — Hacknexus 1.0</h4>
+			<p align="center"><strong>AI Multilingual Legal Assistant</strong></p>
+			<p>AI-powered legal support agent built using advanced Retrieval-Augmented Generation.</p>
+			<strong>Key Features:</strong>
+			<ul>
+				<li>Multi-turn RAG retrieval pipeline</li>
+				<li>Multilingual legal query processing</li>
+				<li>Contextual document extraction</li>
+			</ul>
+			<p><code>Python</code> <code>RAG Pipelines</code> <code>MongoDB</code> <code>React</code></p>
+		</td>
+	</tr>
+</table>
+
+### 🚀 National Placements & Recognition
+
 <table width="100%">
 	<tr>
 		<td width="50%" valign="top">
-			<strong>🏆 Hackathon Wins & Projects</strong>
-			<ul>
-				<li><strong>Formula Hacks 2025</strong> — Built a customizable interactive car engine simulation.</li>
-				<li><strong>Hacknexus 1.0</strong> — Developed an AI-powered multilingual legal assistant using RAG pipelines.</li>
-				<li><strong>Bharat Techx 2.0</strong> — Created an interactive education platform (Finalist / Semi-Finalist).</li>
-			</ul>
+			<strong>NIT Jalandhar National Hackathon</strong>
+			<p>🏆 <strong>Top 4</strong> out of 1000+ teams nationwide.</p>
 		</td>
 		<td width="50%" valign="top">
-			<strong>🚀 National Placements & Recognition</strong>
-			<ul>
-				<li><strong>NIT Jalandhar National Hackathon</strong> — Ranked Top 4 out of 1000+ teams nationwide.</li>
-				<li><strong>Hack the Vault 2.0</strong> — Finalist.</li>
-				<li><strong>Build With AI (Google)</strong> — Semifinalist.</li>
-				<li><strong>Hack n Win 2.0</strong> — Semifinalist (won $300 MongoDB credits).</li>
-			</ul>
+			<strong>Hack n Win 2.0</strong>
+			<p>✨ <strong>Semifinalist</strong> (Won $300 MongoDB credits).</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="50%" valign="top">
+			<strong>Build With AI (Google)</strong>
+			<p>☁️ <strong>Semifinalist</strong> in gen-AI tracks.</p>
+		</td>
+		<td width="50%" valign="top">
+			<strong>Bharat Techx 2.0</strong>
+			<p>🎓 <strong>Finalist / Semi-Finalist</strong> (Interactive education platform).</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="50%" valign="top">
+			<strong>Hack the Vault 2.0</strong>
+			<p>🔒 <strong>Finalist</strong> in financial engineering tracks.</p>
+		</td>
+		<td width="50%" valign="top">
+			-
 		</td>
 	</tr>
 </table>
