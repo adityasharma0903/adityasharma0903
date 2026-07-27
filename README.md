@@ -64,8 +64,8 @@ Building scalable applications with modern technologies.
 		</td>
 		<td width="42%" valign="top">
 			<h2>Quick Profile</h2>
-			<img src="assets/profile.png" alt="Profile frame" width="100%" />
-			<p align="center"><i>Blue-glow frame for the profile photo or avatar treatment.</i></p>
+			<img src="assets/aditya2.jpg" alt="Aditya portrait" width="100%" />
+			<!-- <p align="center"><i>Blue-glow frame for the profile photo or avatar treatment.</i></p> -->
 		</td>
 	</tr>
 </table>
