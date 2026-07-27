@@ -1,0 +1,115 @@
+<svg width="1600" height="520" viewBox="0 0 1600 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Aditya Sharma banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="45%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="180" y1="90" x2="1420" y2="430" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="52%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="strokeGrad" x1="120" y1="70" x2="1480" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#93C5FD" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#A78BFA" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0.23  0 1 0 0 0.56  0 0 1 0 0.98  0 0 0 0.8 0" result="colored"/>
+      <feMerge>
+        <feMergeNode in="colored"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" stroke="#334155" stroke-opacity="0.16" stroke-width="1"/>
+    </pattern>
+    <clipPath id="clipFrame">
+      <rect x="48" y="48" width="1504" height="424" rx="34"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1600" height="520" fill="url(#bg)"/>
+  <rect width="1600" height="520" fill="url(#grid)" opacity="0.6"/>
+
+  <g clip-path="url(#clipFrame)">
+    <circle cx="260" cy="120" r="110" fill="#3B82F6" fill-opacity="0.16" filter="url(#softGlow)">
+      <animate attributeName="cx" values="220;340;220" dur="14s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="100;140;100" dur="11s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1330" cy="118" r="150" fill="#8B5CF6" fill-opacity="0.14" filter="url(#softGlow)">
+      <animate attributeName="cx" values="1340;1260;1340" dur="16s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="112;160;112" dur="12s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1260" cy="392" r="92" fill="#22D3EE" fill-opacity="0.14" filter="url(#softGlow)">
+      <animate attributeName="cx" values="1230;1310;1230" dur="15s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="380;350;380" dur="10s" repeatCount="indefinite"/>
+    </circle>
+
+    <g filter="url(#glow)">
+      <rect x="84" y="72" width="1432" height="376" rx="28" stroke="url(#strokeGrad)" stroke-width="2.2" fill="#0F172A" fill-opacity="0.35"/>
+    </g>
+
+    <g opacity="0.35">
+      <circle cx="160" cy="152" r="4" fill="#93C5FD">
+        <animate attributeName="cy" values="152;136;152" dur="6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="200" cy="208" r="3" fill="#A78BFA">
+        <animate attributeName="cy" values="208;186;208" dur="5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1420" cy="160" r="5" fill="#38BDF8">
+        <animate attributeName="cy" values="160;138;160" dur="7s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1390" cy="300" r="3.5" fill="#C4B5FD">
+        <animate attributeName="cy" values="300;282;300" dur="5.5s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <text x="800" y="180" text-anchor="middle" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="64" font-weight="700" letter-spacing="7">
+      ADITYA SHARMA
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="5s" repeatCount="indefinite"/>
+    </text>
+
+    <text x="800" y="232" text-anchor="middle" fill="#93C5FD" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="30" font-weight="600" letter-spacing="2.4">
+      Full Stack Developer • Backend Engineer • Linux Enthusiast
+    </text>
+
+    <text x="800" y="286" text-anchor="middle" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="500" opacity="0.95">
+      Building products that matter.
+    </text>
+
+    <text x="800" y="340" text-anchor="middle" fill="#A78BFA" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="600" letter-spacing="4.2">
+      MERN  •  BACKEND  •  OPEN SOURCE
+    </text>
+
+    <g filter="url(#glow)">
+      <rect x="506" y="364" width="588" height="10" rx="5" fill="#1E293B"/>
+      <rect x="506" y="364" width="338" height="10" rx="5" fill="url(#accent)">
+        <animate attributeName="width" values="220;380;220" dur="7s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <g transform="translate(292 374)">
+      <circle cx="0" cy="0" r="16" fill="#60A5FA" fill-opacity="0.18" stroke="#93C5FD" stroke-opacity="0.85"/>
+      <circle cx="0" cy="0" r="6" fill="#93C5FD"/>
+    </g>
+    <g transform="translate(1308 374)">
+      <circle cx="0" cy="0" r="16" fill="#8B5CF6" fill-opacity="0.18" stroke="#C4B5FD" stroke-opacity="0.8"/>
+      <circle cx="0" cy="0" r="6" fill="#C4B5FD"/>
+    </g>
+
+    <path d="M84 428C198 408 304 404 416 418C526 432 616 440 712 432C808 424 894 402 1006 404C1118 406 1218 430 1328 426C1410 423 1460 414 1516 404" stroke="#38BDF8" stroke-opacity="0.2" stroke-width="2" fill="none">
+      <animate attributeName="d" dur="10s" repeatCount="indefinite"
+        values="M84 428C198 408 304 404 416 418C526 432 616 440 712 432C808 424 894 402 1006 404C1118 406 1218 430 1328 426C1410 423 1460 414 1516 404;
+                M84 426C194 440 310 432 420 416C528 400 616 398 710 410C806 422 902 440 1014 438C1126 436 1212 410 1324 410C1410 410 1468 422 1516 430;
+                M84 428C198 408 304 404 416 418C526 432 616 440 712 432C808 424 894 402 1006 404C1118 406 1218 430 1328 426C1410 423 1460 414 1516 404"/>
+    </path>
+  </g>
+
+  <rect x="48" y="48" width="1504" height="424" rx="34" fill="none" stroke="#334155" stroke-opacity="0.5" stroke-width="1.5"/>
+</svg>

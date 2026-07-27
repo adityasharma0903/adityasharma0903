@@ -1,163 +1,156 @@
-<h1 align="center">Hi 👋, I'm Aditya Sharma</h1>
+<div align="center">
+	<img src="assets/banner.svg" alt="Aditya Sharma banner" width="100%" />
+</div>
 
-<h3 align="center">
-Full Stack Developer • Backend Engineer • MERN Stack Developer
-</h3>
+<div align="center">
+	<img src="https://readme-typing-svg.herokuapp.com?font=Inter&size=24&duration=3600&pause=900&color=93C5FD&center=true&vCenter=true&width=760&lines=Full+Stack+Developer;Backend+Engineer;MERN+Stack+Developer;Linux+Enthusiast;Open+Source+Contributor;Always+Learning" alt="Typing animation" />
+</div>
 
-<p align="center">
-Building scalable web applications, backend systems and open-source projects.
-</p>
+<div align="center">
+	<a href="https://adityasharma1.vercel.app">
+		<img src="https://img.shields.io/badge/Portfolio-0F172A?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
+	</a>
+	<a href="https://www.linkedin.com/in/aditya-sharma-b54a70325/">
+		<img src="https://img.shields.io/badge/LinkedIn-1D4ED8?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+	</a>
+	<a href="mailto:adityasharma08093@gmail.com">
+		<img src="https://img.shields.io/badge/Email-7C3AED?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+	</a>
+	<a href="https://github.com/adityasharma0903?tab=repositories">
+		<img src="https://img.shields.io/badge/Repos-38BDF8?style=for-the-badge&logo=github&logoColor=0F172A" alt="Repositories" />
+	</a>
+</div>
 
-<p align="center">
-<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=24&duration=3500&pause=800&color=3B82F6&center=true&vCenter=true&width=700&lines=Full+Stack+Developer;Backend+Engineer;MERN+Stack+Developer;Linux+Enthusiast;Always+Learning+New+Things" />
-</p>
+<div align="center">
+	<img src="assets/divider.svg" alt="Divider" width="100%" />
+</div>
 
----
-
-<h2 align="center">🚀 About Me</h2>
-
-<table align="center">
-<tr>
-<td>
-
-🎓 B.Tech Computer Science Student
-
-💻 Full Stack Developer
-
-🚀 Backend Enthusiast
-
-🌱 Learning Docker, Kubernetes & AWS
-
-🐧 Linux Lover
-
-⚡ Love building real-world products
-
-</td>
-
-<td>
-
-🔭 Currently Building
-
-• Livique
-
-• NovaOS
-
-• FahRide
-
-• Open Source Projects
-
-</td>
-</tr>
+<table width="100%">
+	<tr>
+		<td width="58%" valign="top">
+			<h2>About</h2>
+			<p>
+				I build product-focused web applications with a dark, clean interface and a bias for performance.
+				My day-to-day stack leans toward MERN, backend systems, and Linux-driven workflows, with a growing
+				interest in infrastructure and automation.
+			</p>
+			<p>
+				I care about shipping tools that feel polished, stay maintainable, and solve a real problem instead of
+				just checking a technology box.
+			</p>
+			<table>
+				<tr>
+					<td>🎓 B.Tech CSE</td>
+					<td>🐧 Linux</td>
+				</tr>
+				<tr>
+					<td>💻 MERN Stack</td>
+					<td>🌱 Kubernetes + AWS</td>
+				</tr>
+				<tr>
+					<td>🚀 Backend Systems</td>
+					<td>✨ Open Source</td>
+				</tr>
+			</table>
+		</td>
+		<td width="42%" valign="top">
+			<h2>Quick Profile</h2>
+			<img src="assets/profile.png" alt="Profile frame" width="100%" />
+			<p align="center"><i>Blue-glow frame for the profile photo or avatar treatment.</i></p>
+		</td>
+	</tr>
 </table>
 
----
+<div align="center">
+	<img src="assets/divider.svg" alt="Divider" width="100%" />
+</div>
 
-<h2 align="center">💻 Tech Stack</h2>
+## Tech Stack
 
 <p align="center">
-
-<img src="https://skillicons.dev/icons?i=java,cpp,javascript,react,nextjs,nodejs,express,mongodb,mysql,docker,linux,git,github,tailwind,vscode,postman&perline=8"/>
-
+	<img src="https://skillicons.dev/icons?i=react,nodejs,express,mongodb,tailwind,javascript,typescript,java,cpp,python,docker,kubernetes,linux,git,github,vscode,postman&theme=dark&perline=8" alt="Skill icons" />
 </p>
 
----
+## Featured Projects
 
-<h2 align="center">🚀 Featured Projects</h2>
+<table width="100%">
+	<tr>
+		<td width="50%" valign="top">
+			<h3>Livique</h3>
+			<p>Modern ecommerce platform with a refined shopping flow and responsive UI.</p>
+			<p><strong>Stack:</strong> React, Node.js, MongoDB</p>
+		</td>
+		<td width="50%" valign="top">
+			<h3>NovaOS</h3>
+			<p>Custom Linux-focused concept built around lightweight workflows and system control.</p>
+			<p><strong>Stack:</strong> Linux, shell tooling, system automation</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="50%" valign="top">
+			<h3>FahRide</h3>
+			<p>Ride booking product designed for clear journeys, reliable tracking, and clean UX.</p>
+			<p><strong>Stack:</strong> Full stack web app, maps, backend services</p>
+		</td>
+		<td width="50%" valign="top">
+			<h3>Offbyt</h3>
+			<p>Developer tool and utility concept focused on fast workflows and practical automation.</p>
+			<p><strong>Stack:</strong> CLI-first tooling, scripts, backend integrations</p>
+		</td>
+	</tr>
+</table>
+
+## GitHub Analytics
 
 <p align="center">
-
-<a href="https://github.com/adityasharma0903/YOUR_REPO_NAME">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=adityasharma0903&repo=YOUR_REPO_NAME&theme=tokyonight"/>
-</a>
-
-<a href="https://github.com/adityasharma0903/YOUR_REPO_NAME">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=adityasharma0903&repo=YOUR_REPO_NAME&theme=tokyonight"/>
-</a>
-
-</p>
-
-<p align="center">
-
-<a href="https://github.com/adityasharma0903/YOUR_REPO_NAME">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=adityasharma0903&repo=YOUR_REPO_NAME&theme=tokyonight"/>
-</a>
-
-<a href="https://github.com/adityasharma0903/YOUR_REPO_NAME">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=adityasharma0903&repo=YOUR_REPO_NAME&theme=tokyonight"/>
-</a>
-
-</p>
-
----
-
-<h2 align="center">📊 GitHub Analytics</h2>
-
-<p align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=adityasharma0903&show_icons=true&theme=tokyonight&hide_border=true"/>
-
-<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=adityasharma0903&theme=tokyonight&hide_border=true"/>
-
+	<img height="170" src="https://github-readme-stats.vercel.app/api?username=adityasharma0903&show_icons=true&hide_border=true&title_color=93C5FD&text_color=E2E8F0&icon_color=8B5CF6&bg_color=0F172A&border_radius=16" alt="GitHub stats" />
+	<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=adityasharma0903&hide_border=true&background=0F172A&stroke=1E293B&ring=60A5FA&fire=8B5CF6&currStreakNum=E2E8F0&sideNums=E2E8F0&currStreakLabel=93C5FD&sideLabels=93C5FD&dates=94A3B8" alt="GitHub streak" />
 </p>
 
 <p align="center">
-
-<img width="45%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=adityasharma0903&layout=compact&theme=tokyonight&hide_border=true"/>
-
+	<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=adityasharma0903&layout=compact&hide_border=true&title_color=93C5FD&text_color=E2E8F0&bg_color=0F172A&border_radius=16" alt="Top languages" />
+	<img width="49%" src="https://github-profile-trophy.vercel.app/?username=adityasharma0903&theme=onedark&no-frame=true&no-bg=true&margin-w=8&margin-h=8" alt="GitHub trophies" />
 </p>
 
----
-
-<h2 align="center">🏆 GitHub Trophies</h2>
+## Achievements
 
 <p align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=adityasharma0903&theme=tokyonight&row=1&column=7&no-frame=true"/>
-
+	<img src="https://raw.githubusercontent.com/adityasharma0903/adityasharma0903/output/github-contribution-grid-snake.svg" alt="Snake animation" />
 </p>
 
----
-
-<h2 align="center">🌐 Connect With Me</h2>
-
 <p align="center">
-
-<a href="https://adityasharma1.vercel.app">
-<img src="https://img.shields.io/badge/Portfolio-000?style=for-the-badge&logo=vercel"/>
-</a>
-
-<a href="https://www.linkedin.com/in/aditya-sharma-b54a70325/">
-<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin"/>
-</a>
-
-<a href="mailto:adityasharma08093@gmail.com">
-<img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
-</a>
-
+	<img src="https://github-readme-activity-graph.vercel.app/graph?username=adityasharma0903&bg_color=0F172A&color=E2E8F0&line=60A5FA&point=8B5CF6&area=true&hide_border=true" alt="Activity graph" />
 </p>
 
----
-
-<h2 align="center">👀 Profile Views</h2>
+## Connect
 
 <p align="center">
-
-<img src="https://komarev.com/ghpvc/?username=adityasharma0903&label=Visitors&color=0e75b6&style=for-the-badge"/>
-
+	<a href="https://adityasharma1.vercel.app">
+		<img src="https://img.shields.io/badge/Portfolio-0F172A?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
+	</a>
+	<a href="https://www.linkedin.com/in/aditya-sharma-b54a70325/">
+		<img src="https://img.shields.io/badge/LinkedIn-1D4ED8?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+	</a>
+	<a href="mailto:adityasharma08093@gmail.com">
+		<img src="https://img.shields.io/badge/Email-7C3AED?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+	</a>
+	<a href="https://github.com/adityasharma0903">
+		<img src="https://img.shields.io/badge/GitHub-38BDF8?style=for-the-badge&logo=github&logoColor=0F172A" alt="GitHub" />
+	</a>
 </p>
 
----
+<div align="center">
+	<img src="https://komarev.com/ghpvc/?username=adityasharma0903&label=Visitors&color=3B82F6&style=for-the-badge" alt="Visitor counter" />
+</div>
+
+<div align="center">
+	<img src="assets/divider.svg" alt="Divider" width="100%" />
+</div>
 
 <p align="center">
-
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight"/>
-
+	<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" alt="Daily quote" />
 </p>
 
----
-
 <p align="center">
-
-⭐ <b>If you like my work, consider giving a star to my repositories!</b>
-
+	<strong>Building products that matter.</strong>
 </p>

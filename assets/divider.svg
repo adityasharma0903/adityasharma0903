@@ -1,0 +1,32 @@
+<svg width="1600" height="96" viewBox="0 0 1600 96" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated divider">
+  <defs>
+    <linearGradient id="line" x1="0" y1="0" x2="1600" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F172A" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#38BDF8" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.95"/>
+      <stop offset="80%" stop-color="#38BDF8" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blur" x="-20%" y="-300%" width="140%" height="700%">
+      <feGaussianBlur stdDeviation="3.2"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="96" fill="none"/>
+  <path d="M0 48H1600" stroke="#1E293B" stroke-opacity="0.9" stroke-width="2" stroke-dasharray="1 14"/>
+  <path d="M0 48H1600" stroke="url(#line)" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="18 26">
+    <animate attributeName="stroke-dashoffset" from="0" to="-88" dur="6s" repeatCount="indefinite"/>
+  </path>
+  <path d="M0 48H1600" stroke="#60A5FA" stroke-opacity="0.34" stroke-width="10" stroke-linecap="round" stroke-dasharray="18 26" filter="url(#blur)">
+    <animate attributeName="stroke-dashoffset" from="0" to="-88" dur="6s" repeatCount="indefinite"/>
+  </path>
+  <circle cx="280" cy="48" r="8" fill="#93C5FD" fill-opacity="0.9">
+    <animate attributeName="cy" values="48;42;48" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="800" cy="48" r="10" fill="#8B5CF6" fill-opacity="0.85">
+    <animate attributeName="cy" values="48;40;48" dur="5.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1240" cy="48" r="7" fill="#38BDF8" fill-opacity="0.9">
+    <animate attributeName="cy" values="48;43;48" dur="4.8s" repeatCount="indefinite"/>
+  </circle>
+</svg>
